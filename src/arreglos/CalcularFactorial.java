@@ -63,6 +63,5 @@ public class CalcularFactorial {
         for (long valor : arreglo) {
             System.out.print(valor + " ");
         }
-        System.out.println();
     }
 }

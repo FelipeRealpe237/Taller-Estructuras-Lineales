@@ -25,7 +25,7 @@ public class InvertirNumeros {
         int[] numeros = new int[CANTIDAD_NUMEROS];
 
         for (int i = 0; i < numeros.length; i++) {
-            numeros[i] = random.nextInt(LIMITE * 2) - LIMITE;
+            numeros[i] = random.nextInt(LIMITE);
         }
 
         return numeros;
@@ -42,8 +42,6 @@ public class InvertirNumeros {
     }
 
     private static int invertirNumero(int numero) {
-        int signo = numero < 0 ? -1 : 1;
-        numero = Math.abs(numero);
 
         int invertido = 0;
 
@@ -52,14 +50,14 @@ public class InvertirNumeros {
             numero /= 10;
         }
 
-        return invertido * signo;
+        return invertido;
     }
 
     private static void imprimirArreglo(String titulo, int[] arreglo) {
         System.out.println(titulo);
 
-        for (int num : arreglo) {
-            System.out.print(num + " ");
+        for (int numero : arreglo) {
+            System.out.print(numero + " ");
         }
 
         System.out.println("\n");

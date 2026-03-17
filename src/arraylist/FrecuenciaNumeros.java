@@ -49,8 +49,8 @@ public class FrecuenciaNumeros {
 
         System.out.println("Lista de números generados:");
 
-        for (int num : numeros) {
-            System.out.print(num + " ");
+        for (int numero : numeros) {
+            System.out.print(numero + " ");
         }
 
         System.out.println("\n");

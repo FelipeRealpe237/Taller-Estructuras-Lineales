@@ -20,7 +20,5 @@ public class NumerosPrimos {
         for (int numero : arreglo) {
             System.out.print(numero + " ");
         }
-
-        System.out.println();
     }
 }
